@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\zenta\\Desktop\\uj sulis cuccok\\asztali\\referencies\\gson-2.10.1.jar",
+        "c:\\Users\\zenta\\Desktop\\uj sulis cuccok\\asztali\\referencies\\junit-jupiter-api-5.9.1.jar",
+        "c:\\Users\\zenta\\Desktop\\uj sulis cuccok\\asztali\\referencies\\junit-platform-console-standalone-1.9.1.jar",
+        "e:\\Zentai\\gson-2.10.1.jar"
+    ]
+}

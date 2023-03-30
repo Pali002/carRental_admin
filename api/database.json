@@ -1,0 +1,64 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "name": "Citroen C3",
+            "brand": "Citroen",
+            "platenumber": "AA-AD-525",
+            "quantity": 5,
+            "space": 5,
+            "gearbox": "manual",
+            "price": 15500
+        },
+        {
+            "id": 2,
+            "name": "Seat Leon",
+            "brand": "Seat",
+            "platenumber": "AB-AA-855",
+            "quantity": 3,
+            "space": 5,
+            "gearbox": "manual",
+            "price": 17600
+        },
+        {
+            "id": 3,
+            "name": "Suzuki Vitara",
+            "brand": "Suzuki",
+            "platenumber": "AA-AB-914",
+            "quantity": 2,
+            "space": 5,
+            "gearbox": "manual",
+            "price": 25000
+        },
+        {
+            "id": 4,
+            "name": "Toyota Aygo",
+            "brand": "Toyota",
+            "platenumber": "AA-AA-324",
+            "quantity": 7,
+            "space": 4,
+            "gearbox": "manual",
+            "price": 12400
+        },
+        {
+            "id": 5,
+            "name": "Opel Atra",
+            "brand": "Opel",
+            "platenumber": "AA-AE-313",
+            "quantity": 4,
+            "space": 5,
+            "gearbox": "manual",
+            "price": 23000
+        },
+        {
+            "id": 6,
+            "name": "Volkswagen Polo",
+            "brand": "Volkswagen",
+            "platenumber": "AB-AE-216",
+            "quantity": 2,
+            "space": 5,
+            "gearbox": "automata",
+            "price": 28000
+        }
+    ]
+}
