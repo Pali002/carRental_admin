@@ -68,7 +68,7 @@ public class LoginView extends VBox implements ActionListener{
                     messageLabel.setForeground(Color.green);
                     messageLabel.setText("Sikeres bejelentkezés");
                     frame.dispose();
-                    MainTab mainTab = new MainTab(email);
+                    MainTab mainTab = new MainTab(null);
                 } else {
                     messageLabel.setForeground(Color.red);
                     messageLabel.setText("Helytelen jelszó");;

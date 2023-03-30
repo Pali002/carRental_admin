@@ -7,7 +7,7 @@ public class IdandPass {
     HashMap<String, String> loginInfo = new HashMap<String, String>();
 
     public IdandPass() {
-        loginInfo.put("admin", "titok");
+        loginInfo.put("admin@lan.hu", "titok");
     }
 
     public HashMap<String, String> getLoginInfo() {
