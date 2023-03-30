@@ -11,7 +11,6 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javafx.scene.layout.VBox;
 import views.MainTab;
-import views.MainView;
 import views.TitlePanel;
 
 public class LoginView extends VBox implements ActionListener{

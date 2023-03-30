@@ -13,7 +13,7 @@ public class App extends Application {
         MainController mainController = new MainController();
         MainTab mainTab = mainController.getMainTab();
         
-        Scene scene = new Scene(mainTab, 1000, 500);
+        Scene scene = new Scene(mainTab, 700, 300);
         stage.setScene(scene);
         stage.show();
     }

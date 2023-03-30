@@ -3,12 +3,16 @@ package views;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.util.converter.DoubleStringConverter;
 import javafx.util.converter.IntegerStringConverter;
@@ -34,7 +38,6 @@ public class MainView extends VBox {
 
     private void initTable() {
         tableView = new TableView<>();
-        tableView.setEditable(true);
 
         TableColumn<Car, Integer> idCol = new TableColumn<>("Id");
         idCol.setMinWidth(50);
@@ -137,6 +140,9 @@ public class MainView extends VBox {
                 car.setPrice(event.getNewValue());
             }
         });
+
+        tableView.setEditable(true);
+
         
 
         // Restapi restApi = new Restapi();
@@ -146,6 +152,7 @@ public class MainView extends VBox {
         // }else {
         //     System.out.println("A REST API nem elérhető!");
         // }
+
         tableView.setItems(this.getCars());
 
         tableView.getColumns().add(idCol);
