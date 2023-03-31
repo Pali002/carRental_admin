@@ -9,11 +9,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import javafx.scene.layout.VBox;
 import views.MainTab;
 import views.TitlePanel;
 
-public class LoginView extends VBox implements ActionListener{
+public class LoginView implements ActionListener{
     
     JFrame frame = new JFrame();
     JTextField emailIdField = new JTextField();

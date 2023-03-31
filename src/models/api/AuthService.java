@@ -12,11 +12,11 @@ public class AuthService {
     public AuthService() {
     }
     
-    public void registry (int id, String email, String password) {
+    public void registry (String name, String email, String password) {
         String enpoint = "register";
         String url = this.host + enpoint;
 
-        User userData = new User(id, email, password);
+        User userData = new User(name, email, password, password);
         GsonBuilder builder = new GsonBuilder();
         builder.setPrettyPrinting();
         Gson gson = builder.create();
