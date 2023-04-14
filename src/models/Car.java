@@ -10,6 +10,16 @@ public class Car {
     String gearbox;
     double price;
 
+    public Car(String name, String brand, String platenumber, int quantity, int space, String gearbox, double price) {
+        this.name = name;
+        this.brand = brand;
+        this.platenumber = platenumber;
+        this.quantity = quantity;
+        this.space = space;
+        this.gearbox = gearbox;
+        this.price = price;
+    }
+
     public int getId() {
         return id;
     }
@@ -69,7 +79,7 @@ public class Car {
     public double getPrice() {
         return price;
     }
-    
+
     public void setPrice(double price) {
         this.price = price;
     }

@@ -18,7 +18,7 @@ public class MainTab extends TabPane {
         this.registryView = new RegistryView();
         this.initComponent();
         this.addComponent();
-        
+
     }
 
     private void initComponent() {
@@ -30,5 +30,5 @@ public class MainTab extends TabPane {
         this.getTabs().add(this.carTab);
         this.getTabs().add(this.registryTab);
     }
-    
+
 }

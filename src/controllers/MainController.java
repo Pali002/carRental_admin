@@ -18,8 +18,8 @@ public class MainController {
         this.mainView = new MainView();
         this.mainTab = new MainTab(this.mainView);
     }
-    
+
     public MainTab getMainTab() {
         return this.mainTab;
-    }  
+    }
 }

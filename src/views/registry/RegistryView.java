@@ -1,18 +1,16 @@
 package views.registry;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+// import java.awt.event.ActionEvent;
+// import java.awt.event.ActionListener;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import views.InputPanel;
 import views.PassPanel;
 import views.TitlePanel;
 
-public class RegistryView extends VBox implements ActionListener{
-    
-    Label registryLabel;
+public class RegistryView extends VBox {
+
     TitlePanel titlePanel;
     InputPanel nameInput;
     InputPanel emailInput;
@@ -20,7 +18,7 @@ public class RegistryView extends VBox implements ActionListener{
     PassPanel passInput;
     PassPanel passAgainInput;
     Button registryButton;
-    
+
     public RegistryView() {
 
         this.initComponent();
@@ -63,16 +61,16 @@ public class RegistryView extends VBox implements ActionListener{
         this.setAlignment(Pos.CENTER);
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
+    // @Override
+    // public void actionPerformed(ActionEvent e) {
 
-        if (e.getSource()==registryButton) {
-            String name = nameInput.getText();
-            String email = emailInput.getText();
-            String phone = phoneInput.getText();
-            String password = passInput.getText();
-            String passAgain = passAgainInput.getText();
+    // if (e.getSource()==registryButton) {
+    // String name = nameInput.getText();
+    // String email = emailInput.getText();
+    // String phone = phoneInput.getText();
+    // String password = passInput.getText();
+    // String passAgain = passAgainInput.getText();
 
-        }
-    }
+    // }
+    // }
 }

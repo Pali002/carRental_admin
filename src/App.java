@@ -8,13 +8,14 @@ public class App extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    public void start(Stage stage) {
-        
+
+    public void start(Stage primaryStage) {
+
         MainController mainController = new MainController();
         MainTab mainTab = mainController.getMainTab();
-        
+
         Scene scene = new Scene(mainTab, 1000, 500);
-        stage.setScene(scene);
-        stage.show();
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 }

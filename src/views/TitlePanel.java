@@ -6,7 +6,7 @@ import javafx.scene.layout.HBox;
 
 public class TitlePanel extends HBox {
     Label label;
-    
+
     public TitlePanel() {
         this.label = new Label();
         this.initComponent();
@@ -25,4 +25,3 @@ public class TitlePanel extends HBox {
         return this.label.getText();
     }
 }
-
