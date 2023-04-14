@@ -18,7 +18,6 @@ public class LoginView implements ActionListener {
     JTextField emailIdField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
     JLabel titleLabel = new JLabel("Autókölcsönző admin felület");
-
     JLabel emailIdLabel = new JLabel("Email: ");
     JLabel passwordLabel = new JLabel("Jelszó: ");
     JLabel messageLabel = new JLabel();

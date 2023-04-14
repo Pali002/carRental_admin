@@ -2,6 +2,11 @@ package views.registry;
 
 // import java.awt.event.ActionEvent;
 // import java.awt.event.ActionListener;
+
+import javax.swing.JOptionPane;
+
+// import java.awt.event.ActionEvent;
+// import java.awt.event.ActionListener;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
@@ -25,6 +30,7 @@ public class RegistryView extends VBox {
         this.setComponent();
         this.addComponent();
         this.setPanel();
+        this.onClickButton();
     }
 
     private void initComponent() {
@@ -61,16 +67,59 @@ public class RegistryView extends VBox {
         this.setAlignment(Pos.CENTER);
     }
 
+    private void onClickButton() {
+        registryButton.setOnAction(e -> {
+            String name = nameInput.getText();
+            String email = emailInput.getText();
+            String phone = phoneInput.getText();
+            String password = passInput.getText();
+            String passAgain = passAgainInput.getText();
+
+            if (name.equals("")) {
+                JOptionPane.showMessageDialog(null, "Név megadása kotelezo");
+            }
+            if (email.equals("")) {
+                JOptionPane.showMessageDialog(null, "Email megadása kotelezo");
+            }
+            if (phone.equals("")) {
+                JOptionPane.showMessageDialog(null, "Telefonszám megadása kotelezo");
+            }
+            if (password.equals("")) {
+                JOptionPane.showMessageDialog(null, "Jelszó megadása kotelezo");
+            }
+            if (passAgain.equals("")) {
+                JOptionPane.showMessageDialog(null, "Jelszó ismétlése kotelezo");
+            }
+        });
+
+        System.out.println("work");
+    }
+
     // @Override
     // public void actionPerformed(ActionEvent e) {
 
-    // if (e.getSource()==registryButton) {
+    // if (e.getSource() == registryButton) {
     // String name = nameInput.getText();
     // String email = emailInput.getText();
     // String phone = phoneInput.getText();
     // String password = passInput.getText();
     // String passAgain = passAgainInput.getText();
 
+    // if (name.equals("")) {
+    // JOptionPane.showMessageDialog(null, "Név megadása kotelezo");
+    // }
+    // if (email.equals("")) {
+    // JOptionPane.showMessageDialog(null, "Email megadása kotelezo");
+    // }
+    // if (phone.equals("")) {
+    // JOptionPane.showMessageDialog(null, "Telefonszám megadása kotelezo");
+    // }
+    // if (password.equals("")) {
+    // JOptionPane.showMessageDialog(null, "Jelszó megadása kotelezo");
+    // }
+    // if (passAgain.equals("")) {
+    // JOptionPane.showMessageDialog(null, "Jelszó ismétlése kotelezo");
+    // }
     // }
     // }
 }
