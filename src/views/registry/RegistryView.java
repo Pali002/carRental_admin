@@ -29,8 +29,8 @@ public class RegistryView extends VBox {
         this.initComponent();
         this.setComponent();
         this.addComponent();
-        this.setPanel();
         this.onClickButton();
+        this.setPanel();
     }
 
     private void initComponent() {
