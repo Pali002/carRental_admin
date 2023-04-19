@@ -25,6 +25,9 @@ public class MainView extends VBox {
     Label carsLabel;
     DataService datasService;
     Restapi restapi;
+    Button saveButton;
+    Button addButton;
+    Button deleteButton;
 
     private TableView<Car> tableView;
     private TextField nameInput,
@@ -35,13 +38,14 @@ public class MainView extends VBox {
             gearboxInput,
             priceInput;
 
-    public MainView() {
+    public MainView(String email) {
         carsLabel = new Label("Autók");
 
         this.initData();
         this.initTable();
         this.getChildren().add(carsLabel);
         this.getChildren().add(tableView);
+        this.Buttons();
     }
 
     private void initTable() {
@@ -217,6 +221,25 @@ public class MainView extends VBox {
         // }else {
         // System.out.println("A REST API nem elérhető!");
         // }
+    }
+
+    private void Buttons() {
+
+        // mentés gomb
+        this.saveButton = new Button();
+        this.saveButton.setText("Mentés");
+        this.getChildren().add(this.saveButton);
+
+        // hozzáad gomb
+
+        this.addButton = new Button();
+        this.addButton.setText("Hozzáadás");
+        this.getChildren().add(this.addButton);
+
+        // torles gomb
+        this.deleteButton = new Button();
+        this.deleteButton.setText("Torles");
+        this.getChildren().add(this.deleteButton);
     }
 
     private void onClickAddButton() {

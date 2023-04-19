@@ -15,7 +15,7 @@ public class MainController {
     public MainController() {
         this.idandPass = new IdandPass();
         this.loginView = new LoginView(idandPass.getLoginInfo());
-        this.mainView = new MainView();
+        this.mainView = new MainView(null);
         this.mainTab = new MainTab(this.mainView);
     }
 

@@ -7,7 +7,6 @@ import views.registry.RegistryView;
 public class MainTab extends TabPane {
 
     Tab carTab;
-    Tab loginTab;
     Tab registryTab;
     MainView mainView;
     RegistryView registryView;

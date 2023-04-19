@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "LoginView",
+            "request": "launch",
+            "mainClass": "views.login.LoginView",
+            "projectName": "TestcarRent_f2ad9de8"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

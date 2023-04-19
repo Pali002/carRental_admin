@@ -14,6 +14,7 @@ import views.MainView;
 
 public class LoginView implements ActionListener {
 
+    MainView mainView;
     JFrame frame = new JFrame();
     JTextField emailIdField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
@@ -71,7 +72,7 @@ public class LoginView implements ActionListener {
                     messageLabel.setForeground(Color.green);
                     messageLabel.setText("Sikeres bejelentkezés");
                     frame.dispose();
-                    MainView mainView = new MainView();
+                    mainView = new MainView(email);
                 } else {
                     messageLabel.setForeground(Color.red);
                     messageLabel.setText("Helytelen jelszó");
