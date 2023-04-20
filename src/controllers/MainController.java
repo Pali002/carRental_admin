@@ -15,7 +15,11 @@ public class MainController {
     public MainController() {
         this.idandPass = new IdandPass();
         this.loginView = new LoginView(idandPass.getLoginInfo());
-        this.mainView = new MainView(null);
+
+        while (!this.loginView.getValasz().equals("OK")) {
+            System.out.println(this.loginView.getValasz() + "!");
+        }
+        this.mainView = new MainView();
         this.mainTab = new MainTab(this.mainView);
     }
 
