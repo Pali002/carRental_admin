@@ -5,16 +5,22 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.management.relation.MBeanServerNotificationFilter;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+
+import controllers.MainController;
+import views.MainTab;
 import views.MainView;
 
 public class LoginView implements ActionListener {
 
     MainView mainView;
+    MainTab mainTab;
     JFrame frame = new JFrame();
     JTextField emailIdField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
@@ -23,7 +29,11 @@ public class LoginView implements ActionListener {
     JLabel passwordLabel = new JLabel("Jelszó: ");
     JLabel messageLabel = new JLabel();
     JButton loginButton = new JButton("Bejelentkezés");
+    JButton resetButton = new JButton("Újra");
+    JButton exitButton = new JButton("Kilépés");
+
     HashMap<String, String> loginInfo = new HashMap<String, String>();
+    String valasz = "";
 
     public LoginView(HashMap<String, String> loginInfoOriginal) {
 
@@ -45,6 +55,14 @@ public class LoginView implements ActionListener {
         loginButton.setFocusable(false);
         loginButton.addActionListener(this);
 
+        resetButton.setBounds(10, 200, 100, 25);
+        resetButton.setFocusable(false);
+        resetButton.addActionListener(this);
+
+        exitButton.setBounds(275, 200, 100, 25);
+        exitButton.setFocusable(false);
+        exitButton.addActionListener(this);
+
         frame.add(titleLabel);
         frame.add(emailIdLabel);
         frame.add(passwordLabel);
@@ -52,6 +70,8 @@ public class LoginView implements ActionListener {
         frame.add(emailIdField);
         frame.add(passwordField);
         frame.add(loginButton);
+        frame.add(resetButton);
+        frame.add(exitButton);
 
         frame.setTitle("Admin panel");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -63,6 +83,15 @@ public class LoginView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if (e.getSource() == exitButton) {
+            System.exit(0);
+        }
+
+        if (e.getSource() == resetButton) {
+            emailIdField.setText("");
+            passwordField.setText("");
+        }
+
         if (e.getSource() == loginButton) {
             String email = emailIdField.getText();
             String password = String.valueOf(passwordField.getPassword());
@@ -72,7 +101,7 @@ public class LoginView implements ActionListener {
                     messageLabel.setForeground(Color.green);
                     messageLabel.setText("Sikeres bejelentkezés");
                     frame.dispose();
-                    mainView = new MainView(email);
+                    valasz = "OK";
                 } else {
                     messageLabel.setForeground(Color.red);
                     messageLabel.setText("Helytelen jelszó");
@@ -84,5 +113,9 @@ public class LoginView implements ActionListener {
                 ;
             }
         }
+    }
+
+    public String getValasz() {
+        return valasz;
     }
 }
