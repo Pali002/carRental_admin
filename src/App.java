@@ -12,10 +12,15 @@ public class App extends Application {
     public void start(Stage primaryStage) {
 
         MainController mainController = new MainController();
-        MainTab mainTab = mainController.getMainTab();
-
-        Scene scene = new Scene(mainTab, 1000, 500);
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        MainTab mainTab = null;
+        try {
+            mainTab = mainController.getMainTab();
+            if (mainTab != null) {
+                Scene scene = new Scene(mainTab, 1000, 500);
+                primaryStage.setScene(scene);
+                primaryStage.show();
+            }
+        } catch (Exception ex) {
+        }
     }
 }
