@@ -1,20 +1,13 @@
 package views;
 
-import javax.swing.Action;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.util.converter.DoubleStringConverter;
 import javafx.util.converter.IntegerStringConverter;
@@ -27,7 +20,7 @@ public class MainView extends VBox {
     Label carsLabel;
     DataService datasService;
     Restapi restapi;
-    Button saveButton;
+    Button exitButton;
     Button addButton;
     Button deleteButton;
     // InputPanel nameInput;
@@ -41,7 +34,7 @@ public class MainView extends VBox {
     // gearboxInput,
     // priceInput;
 
-    public MainView(String email) {
+    public MainView() {
         carsLabel = new Label("Autók");
 
         this.initData();
@@ -166,11 +159,6 @@ public class MainView extends VBox {
 
     private void Buttons() {
 
-        // mentés gomb
-        this.saveButton = new Button();
-        this.saveButton.setText("Mentés");
-        this.getChildren().add(this.saveButton);
-
         // hozzáad gomb
 
         this.addButton = new Button();
@@ -181,6 +169,11 @@ public class MainView extends VBox {
         this.deleteButton = new Button();
         this.deleteButton.setText("Torles");
         this.getChildren().add(this.deleteButton);
+
+        // kilépés gomb
+        this.exitButton = new Button();
+        this.exitButton.setText("Kilépés");
+        this.getChildren().add(this.exitButton);
     }
 
     // private void input() {

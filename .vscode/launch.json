@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "carRental_admin_36df649d"
+        },
+        {
+            "type": "java",
             "name": "LoginView",
             "request": "launch",
             "mainClass": "views.login.LoginView",

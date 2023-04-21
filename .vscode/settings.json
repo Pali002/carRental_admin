@@ -14,6 +14,7 @@
         "c:\\Users\\zenta\\Downloads\\openjfx-20_windows-x64_bin-sdk\\javafx-sdk-20\\lib\\javafx.media.jar",
         "c:\\Users\\zenta\\Downloads\\openjfx-20_windows-x64_bin-sdk\\javafx-sdk-20\\lib\\javafx.swing.jar",
         "c:\\Users\\zenta\\Downloads\\openjfx-20_windows-x64_bin-sdk\\javafx-sdk-20\\lib\\javafx.web.jar",
-        "c:\\Users\\zenta\\Downloads\\openjfx-20_windows-x64_bin-sdk\\javafx-sdk-20\\lib\\javafx-swt.jar"
+        "c:\\Users\\zenta\\Downloads\\openjfx-20_windows-x64_bin-sdk\\javafx-sdk-20\\lib\\javafx-swt.jar",
+        "c:\\Users\\diak\\Downloads\\gson-2.10.1.jar"
     ]
 }
