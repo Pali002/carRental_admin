@@ -74,6 +74,8 @@ ezek szerkeszthetők, törölhetők, valamint módunkban áll új autó felvéte
 ezt a táblázat alatt lévő beviteli mezők biztosítják.
 Az id mezőn kívül minden mező szerkeszthető.
 
+### Jövőbeli funkciók
+
 A regisztrációra kattintva, új felhasználót tudunk felvenni,
 ehez meg kell adnunk a kért adatokat,
 majd a regisztáció fülre kattintva, hiteles adatok megadása után
